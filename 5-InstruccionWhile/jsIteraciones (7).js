@@ -1,12 +1,28 @@
 function mostrar()
 {
 
-	var contador=0;
-	var acumulador=0;
-	var respuesta='si';
+	var suma = 0;
+	var promedio;
+	var cantVeces = 1;
+	var numero;
+	var respuesta;
+
+do {
+   
+numero = parseInt(prompt("Ingrese un numero"));
+
+suma = suma + numero;
+
+cantVeces++;
+
+respuesta = prompt("Desea continuar?");
+
+} while (respuesta == "si");
 
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+promedio = suma / cantVeces;
+
+document.getElementById('suma').value=suma;
+document.getElementById('promedio').value=promedio;
 
 }//FIN DE LA FUNCIÓN

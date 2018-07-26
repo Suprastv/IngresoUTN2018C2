@@ -1,9 +1,10 @@
 function mostrar()
 {
-
 	
-	var positivo=0;
-	var negativo=1;
+	var positivo = 0;
+	var cantPositivos=0;
+	var negativo = 0;
+	var cantNegativos=0;
 	var numero;
 	
 	var respuesta='si';
@@ -16,7 +17,7 @@ do
 	if(numero < 0)
 	{
 
-		negativo = negativo * numero;
+		negativo = negativo + numero;
 
 	}
 	else
@@ -34,5 +35,6 @@ respuesta = prompt("Desea continuar? (si/no).");
 
 	document.getElementById('suma').value=positivo;
 	document.getElementById('producto').value=negativo;
+
 
 }//FIN DE LA FUNCIÓN
